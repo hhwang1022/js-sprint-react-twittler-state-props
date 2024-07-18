@@ -441,7 +441,7 @@ describe("Tweets.js 트윗 전송 폼 테스트", () => {
       {/* expect(selectedTweets[0]).toBe(queryByText(msg)); */}
       {/* selectedTweets[0] = [object HTMLDivElement] */}
 
-      expect(selectedTweets[0].textContent).toBe(msg);
+      expect(selectedTweets[0]).toBe(queryByText(msg));
     });
   });
 });
